@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Définir le répertoire de travail
-WORK_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg"
+WORK_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/"
 OUTPUT_DIR="../EPG"
 
 # Changer de répertoire et installer les dépendances
