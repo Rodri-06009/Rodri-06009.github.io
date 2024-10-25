@@ -6,13 +6,13 @@ cd /home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg && npm install
 
 npm run grab -- --site=nostv.pt --output=../EPG/epg-nos-tv-pt.xml --days=7
 
-# Orange EPG
+# TV CE SOIR EPG
 
-npm run grab -- --site=chaines-tv.orange.fr --output=../EPG/epg-orange-fr.xml --days=7
+npm run grab -- --site=tvcesoir.fr --output=../EPG/epg-tv-ce-soir-fr.xml --days=7
 
 # Hd-plus EPG
 
-npm run grab -- --site=hd-plus.de --output=../EPG/epg-rtp-pt.xml --days=7
+npm run grab -- --site=hd-plus.de --output=../EPG/epg-hd-plus-de.xml --days=7
 
 # Mi.tv EPG
 
