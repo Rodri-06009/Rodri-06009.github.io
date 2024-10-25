@@ -9,10 +9,16 @@ jobs:
   Update-EPG:
     runs-on: ubuntu-latest
     steps:
-    
-      - name: Checkout repository
+
+      - name: Checkout the main repository
         uses: actions/checkout@v4
 
+      - name: Checkout the EPG repository 
+        uses: actions/checkout@v4 
+        with: 
+          repository: iptv-org/epg
+          path: iptv-org-epg
+     
       - name: Run EPG update script
         run: bash EPG/epg.sh  # Assurez-vous que le chemin est correct
 
