@@ -1,37 +1,39 @@
 #!/bin/bash
 
-# Définir le répertoire de travail
-WORK_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg"
-OUTPUT_DIR="../EPG"
+cd /home/runner/work/M3UPT/M3UPT/iptv-org-epg && npm install
 
-# Changer de répertoire et installer les dépendances
-cd "$WORK_DIR" || { echo "Erreur : Impossible de changer de répertoire vers $WORK_DIR"; exit 1; }
-echo "Installation des dépendances..."
-npm install || { echo "Erreur lors de l'installation des dépendances"; exit 1; }
+# Meo EPG
 
-# Fonction pour récupérer l'EPG
-grab_epg() {
-    local site=$1
-    local output_file=$2
-    echo "Récupération de l'EPG depuis $site..."
-    npm run grab -- --site="$site" --output="$output_file" --days=7 || { echo "Erreur lors de la récupération de l'EPG pour $site"; exit 1; }
-}
+npm run grab -- --site=meo.pt --output=../EPG/epg-meo-pt.xml --days=7
 
-# Récupérer les EPG
-grab_epg "meo.pt" "$OUTPUT_DIR/epg-meo-pt.xml"
-grab_epg "chaines.orange.fr" "$OUTPUT_DIR/epg-orange-fr.xml"
-grab_epg "elisaviihde.fi" "$OUTPUT_DIR/epg-elizaviihde-fi.xml"
-grab_epg "mi.tv" "$OUTPUT_DIR/epg-mitv-br.xml" --channels=sites/mi.tv/mi.tv_br.channels.xml
-grab_epg "vodafone.de" "$OUTPUT_DIR/epg-vodafone-de.xml"
+# Orange EPG
 
-# Compression des fichiers EPG
-cd "$OUTPUT_DIR" || { echo "Erreur : Impossible de changer de répertoire vers $OUTPUT_DIR"; exit 1; }
-echo "Compression des fichiers EPG..."
-xz -k -f -9 epg*.xml && gzip -k -f -9 epg*.xml || { echo "Erreur lors de la compression des fichiers"; exit 1; }
+npm run grab -- --site=chaines-tv.orange.fr --output=../EPG/epg-orange-fr.xml --days=7
 
-# Suppression des fichiers XML originaux
-echo "Suppression des fichiers XML originaux..."
-rm epg*.xml || { echo "Erreur lors de la suppression des fichiers XML"; exit 1; }
+# Hd-plus EPG
 
-echo "Processus terminé avec succès."
+npm run grab -- --site=hd-plus.de --output=../EPG/epg-rtp-pt.xml --days=7
+
+# Mi.tv EPG
+
+npm run grab -- --channels=sites/mi.tv/mi.tv_br.channels.xml --output=../EPG/epg-mitv-br.xml --days=7
+
+# Allente EPG
+
+npm run grab -- --site=allente.fi --output=../EPG/epg-allente-fi.xml --days=7
+
+# TV.SMS EPG
+
+npm run grab -- --site=m.tv.sms.cz --output=../EPG/epg-tv-sms-cz.xml --days=7
+
+cd ../EPG
+
+# Compress EPG xml files
+
+xz -k -f -9 epg*.xml && gzip -k -f -9 epg*.xml
+
+# Remove EPG xml files
+
+rm epg*.xml
+
 exit 0
