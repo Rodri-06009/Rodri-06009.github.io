@@ -20,4 +20,13 @@
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="NovaTV.hr" site_id="Nova+TV">Nova TV</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerOriginal.cz" site_id="%8Al%E1gr+Origin%E1l">lgr Originl</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Prima.cz" site_id="Prima">Prima</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RTP1.pt" site_id="RTP1">RTP 1</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="RTP2.pt" site_id="RTP2">RTP 2</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="SIC.pt" site_id="SIC">SIC</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TVI.pt" site_id="TVI">TVI</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="SICNoticias.pt" site_id="SICN">SIC Notícias</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="CNNPT">CNN Portugal</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TVIFiccao.pt" site_id="TVIFIC">TVI Ficção</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="PortoCanal.pt" site_id="PORTO">Porto Canal</channel>
+  <channel site="meo.pt" lang="pt" xmltv_id="TVIReality.pt" site_id="TVIR">TVI Reality</channel>
 </channels>
