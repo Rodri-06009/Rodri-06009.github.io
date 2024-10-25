@@ -2,9 +2,9 @@
 
 cd /home/runner/work/M3UPT/M3UPT/iptv-org-epg && npm install
 
-# Meo EPG
+# NOS TV EPG
 
-npm run grab -- --site=meo.pt --output=../EPG/epg-meo-pt.xml --days=7
+npm run grab -- --site=nostv.pt --output=../EPG/epg-nos-tv-pt.xml --days=7
 
 # Orange EPG
 
