@@ -20,15 +20,15 @@
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="NovaTV.hr" site_id="Nova+TV">Nova TV</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerOriginal.cz" site_id="%8Al%E1gr+Origin%E1l">lgr Originl</channel>
   <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Prima.cz" site_id="Prima">Prima</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RTP1.pt" site_id="RTP1">RTP 1</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="RTP2.pt" site_id="RTP2">RTP 2</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SIC.pt" site_id="SIC">SIC</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVI.pt" site_id="TVI">TVI</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="SICNoticias.pt" site_id="SICN">SIC Notícias</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="CNNPT">CNN Portugal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVIFiccao.pt" site_id="TVIFIC">TVI Ficção</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="PortoCanal.pt" site_id="PORTO">Porto Canal</channel>
-  <channel site="meo.pt" lang="pt" xmltv_id="TVIReality.pt" site_id="TVIR">TVI Reality</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="RTP1.pt" site_id="139">RTP 1 HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="RTP2.pt" site_id="554">RTP 2 HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="SIC.pt" site_id="418">SIC HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="TVI.pt" site_id="555">TVI HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="SICNoticias.pt" site_id="419">SIC Notícias HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="557">CNN Portugal HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="VPlusTVI.pt" site_id="574">V+ TVI</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="PortoCanal.pt" site_id="423">Porto Canal HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="TVIReality.pt" site_id="567">TVI Reality HD</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TF1.fr" site_id="192">TF1</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France2.fr" site_id="4">FRANCE 2</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="France3.fr" site_id="80">FRANCE 3</channel>
@@ -45,4 +45,18 @@
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="Gulli.fr" site_id="482">GULLI</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="LEquipe.fr" site_id="1401">LA CHAINE L'EQUIPE</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="6ter.fr" site_id="1403">6TER</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="DasErste.de" site_id="das-erste-hd">Das Erste</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="ZDF.de" site_id="zdf-hd">ZDF</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="RTL.de" site_id="rtl-hd">RTL Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="SAT1.de" site_id="sat-1-hd">Sat. 1 Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="ProSieben.de" site_id="prosieben-hd">ProSieben Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="VOX.de" site_id="vox-hd">Vox Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="kabeleins.de" site_id="kabel-eins-hd">Kabel Eins Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="RTLZwei.de" site_id="rtl-ii-hd">RTL Zwei Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="3sat.de" site_id="3sat-hd">3sat</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="One.de" site_id="one-hd">One</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="ZDFinfo.de" site_id="zdfinfo-hd">ZDF Info</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="ZDFneo.de" site_id="zdfneo-hd">ZDF Neo</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="sixx.de" site_id="sixx-hd">Sixx Deutschland</channel>
+  <channel site="hd-plus.de" lang="de" xmltv_id="DMAX.de" site_id="dmax-hd">DMAX Deutschland</channel>
 </channels>
