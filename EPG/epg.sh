@@ -10,9 +10,9 @@ npm run grab -- --site=nostv.pt --output=../EPG/epg-nos-tv-pt.xml --days=7
 
 npm run grab -- --site=tvcesoir.fr --output=../EPG/epg-tv-ce-soir-fr.xml --days=7
 
-# Hd-plus EPG
+# Magentatv EPG
 
-npm run grab -- --site=hd-plus.de --output=../EPG/epg-hd-plus-de.xml --days=7
+npm run grab -- --site=web.magentatv.de --output=../EPG/epg-magentatv-de.xml --days=7
 
 # Mi.tv EPG
 
@@ -21,10 +21,6 @@ npm run grab -- --channels=sites/mi.tv/mi.tv_br.channels.xml --output=../EPG/epg
 # iltalehti EPG
 
 npm run grab -- --site=iltalehti.fi --output=../EPG/epg-iltalehti-fi.xml --days=7
-
-# TV.SMS EPG
-
-npm run grab -- --site=m.tv.sms.cz --output=../EPG/epg-tv-sms-cz.xml --days=7
 
 cd ../EPG
 
