@@ -10,20 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     
-      - name: checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: update EPG
-        run: /EPG/epg.sh
+      - name: Run EPG update script
+        run: bash EPG/epg.sh  # Assurez-vous que le chemin est correct
 
-      - name: setup git config
+      - name: Setup Git config
         run: |
-          git config user.name "Github Action"
-          git config user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
 
-      - name: commit
+      - name: Commit changes
         run: |
           git pull
-          cd EPG && git add .
+          cd EPG
+          git add .
           git commit -m "Update EPG" || echo "No changes to commit"
           git push origin main  # Ajustez si nécessaire
