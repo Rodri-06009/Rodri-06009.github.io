@@ -18,9 +18,9 @@ npm run grab -- --site=hd-plus.de --output=../EPG/epg-rtp-pt.xml --days=7
 
 npm run grab -- --channels=sites/mi.tv/mi.tv_br.channels.xml --output=../EPG/epg-mitv-br.xml --days=7
 
-# Allente EPG
+# iltalehti EPG
 
-npm run grab -- --site=allente.fi --output=../EPG/epg-allente-fi.xml --days=7
+npm run grab -- --site=iltalehti.fi --output=../EPG/epg-iltalehti-fi.xml --days=7
 
 # TV.SMS EPG
 
