@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/runner/work/M3UPT/M3UPT/iptv-org-epg && npm install
+cd /home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg && npm install
 
 # NOS TV EPG
 
