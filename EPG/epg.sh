@@ -19,7 +19,7 @@ grab_epg() {
 
 # Récupérer les EPG
 grab_epg "meo.pt" "$OUTPUT_DIR/epg-meo-pt.xml"
-grab_epg "orange.fr" "$OUTPUT_DIR/epg-orange-fr.xml"
+grab_epg "chaines.orange.fr" "$OUTPUT_DIR/epg-orange-fr.xml"
 grab_epg "elisaviihde.fi" "$OUTPUT_DIR/epg-elizaviihde-fi.xml"
 grab_epg "mi.tv" "$OUTPUT_DIR/epg-mitv-br.xml" --channels=sites/mi.tv/mi.tv_br.channels.xml
 grab_epg "vodafone.de" "$OUTPUT_DIR/epg-vodafone-de.xml"
