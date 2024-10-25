@@ -7,4 +7,12 @@
   <channel site="iltalehti.fi" lang="fi" xmltv_id="YleTeemaFem.fi" site_id="1#yle-teema-fem">Yle Teema Fem</channel>
   <channel site="iltalehti.fi" lang="fi" xmltv_id="Sub.fi" site_id="1#sub">MTV Sub</channel>
   <channel site="iltalehti.fi" lang="fi" xmltv_id="Kutonen.fi" site_id="1#kutonen">Kutonen</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="TVGloboRiodeJaneiro.br" site_id="br#globo-rj">Globo RJ</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="Record.br" site_id="br#record">Record TV</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="SBTNacional.br" site_id="br#sbt">SBT</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="BandAmazonas.br" site_id="br#band-amazonas">Band Amazonas</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="RedeTV.br" site_id="br#rede-tv">RedeTV!</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="TVCulturaNacional.br" site_id="br#cultura">Cultura</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="CanalFutura.br" site_id="br#futura">Futura</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="RecordNews.br" site_id="br#record-news">Record News</channel>
 </channels>
