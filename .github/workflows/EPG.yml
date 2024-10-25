@@ -20,7 +20,7 @@ jobs:
           path: iptv-org-epg
      
       - name: Run EPG update script
-        run: bash EPG/epg.sh  # Assurez-vous que le chemin est correct
+        run: bash EPG/epg1.sh  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
         run: |
