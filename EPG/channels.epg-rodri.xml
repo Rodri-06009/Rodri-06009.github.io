@@ -15,4 +15,9 @@
   <channel site="mi.tv" lang="pt" xmltv_id="TVCulturaNacional.br" site_id="br#cultura">Cultura</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="CanalFutura.br" site_id="br#futura">Futura</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="RecordNews.br" site_id="br#record-news">Record News</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="CT1.cz" site_id="%C8T1">T1</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="CT2.cz" site_id="%C8T2">T2</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="NovaTV.hr" site_id="Nova+TV">Nova TV</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="SlagerOriginal.cz" site_id="%8Al%E1gr+Origin%E1l">lgr Originl</channel>
+  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="Prima.cz" site_id="Prima">Prima</channel>
 </channels>
