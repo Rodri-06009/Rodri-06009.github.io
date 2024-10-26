@@ -9,6 +9,7 @@ OUTPUT_DIR="../EPG/extracted"
 mkdir -p "$OUTPUT_DIR"
 
 # Boucle à travers tous les fichiers .xml.gz dans le répertoire d'entrée
+shopt -s nullglob  # Enable nullglob to avoid issues if no files match
 for gz_file in "$INPUT_DIR"/*.xml.gz; do
     # Vérifie si le fichier existe
     if [ -f "$gz_file" ]; then
@@ -16,12 +17,14 @@ for gz_file in "$INPUT_DIR"/*.xml.gz; do
         output_file="$OUTPUT_DIR/$(basename "$gz_file" .gz)"
 
         # Extraire le fichier XML
-if gunzip -c "$gz_file" > "$output_file"; then
-    echo "Extracted: $output_file"
-else
-    echo "Failed to extract: $gz_file"
+        if gunzip -c "$gz_file" > "$output_file"; then
+            echo "Extracted: $output_file"
+        else
+            echo "Failed to extract: $gz_file"
+        fi
+    else
+        echo "No .xml.gz files found in $INPUT_DIR."
     fi
-fi
 done
 
 # Vérifier le contenu du répertoire extrait 
