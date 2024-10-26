@@ -16,7 +16,9 @@ for gz_file in "$INPUT_DIR"/*.xml.gz; do
         output_file="$OUTPUT_DIR/$(basename "$gz_file" .gz)"
 
         # Extraire le fichier XML
-        gunzip -c "$gz_file" > "$output_file"
-        echo "Extracted: $output_file"
-    fi
+if gunzip -c "$gz_file" > "$output_file"; then
+    echo "Extracted: $output_file"
+else
+    echo "Failed to extract: $gz_file"
+fi
 done
