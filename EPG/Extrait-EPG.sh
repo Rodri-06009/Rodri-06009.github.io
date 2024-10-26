@@ -3,10 +3,7 @@
 # Répertoire contenant les fichiers .xml.gz
 INPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 # Répertoire de sortie
-OUTPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG/extracted"
-
-# Créer le répertoire de sortie s'il n'existe pas
-mkdir -p "$OUTPUT_DIR"
+OUTPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 
 # Activer nullglob pour éviter les problèmes si aucun fichier ne correspond
 shopt -s nullglob  
