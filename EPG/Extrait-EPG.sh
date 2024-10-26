@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Répertoire contenant les fichiers .xml.gz
-INPUT_DIR="../EPG"
+INPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 # Répertoire de sortie
 OUTPUT_DIR="../EPG/extracted"
 
