@@ -39,6 +39,6 @@ else:
 
     # Write the new XML tree to a file
     new_tree = ET.ElementTree(root)
-    new_tree.write("combined.xml", encoding="utf-8", xml_declaration=True)
+    new_tree.write("epg-rodri.xml", encoding="utf-8", xml_declaration=True)
 
-    print("Combined XML has been created as combined.xml")
+    print("Combined XML has been created as epg-rodri.xml")
