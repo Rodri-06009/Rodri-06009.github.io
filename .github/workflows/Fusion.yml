@@ -13,11 +13,7 @@ jobs:
       - name: Checkout the main repository
         uses: actions/checkout@v4
 
-      - name: Extrait EPG
-        run: sh EPG/Extrait-EPG.sh
-
-
-      - name: Fusion EPG
+      - name: Extrait and Fusion EPG
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
