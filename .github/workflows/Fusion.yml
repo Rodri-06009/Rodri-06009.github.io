@@ -15,6 +15,7 @@ jobs:
 
       - name: Extrait EPG
         run: chmod +x /home/runner/work/EPG-Rodri/EPG-Rodri/EPG/Extrait-EPG.sh
+/home/runner/work/EPG-Rodri/EPG-Rodri/EPG/Extrait-EPG.sh
      
       - name: Fusion EPG
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
