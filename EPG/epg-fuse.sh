@@ -9,7 +9,7 @@ echo "<Root>" >> "$output"
 
 # Boucle pour ajouter des fichiers XML
 while true; do
-    read -p "EPG/epg-iltalehti-fi.xml" filename
+    read -p "Entrez le nom du fichier XML à ajouter (ou tapez 'exit' pour terminer) :EPG/epg-iltalehti-fi.xml" filename
 
     # Condition de sortie
     if [[ "$filename" == "exit" ]]; then
