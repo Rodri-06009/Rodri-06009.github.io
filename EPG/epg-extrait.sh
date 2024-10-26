@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm *.xml
+
 gunzip -k ../EPG-Rodri/EPG/epg-iltalehti-fi.xml.gz
 
 gunzip -k ../EPG-Rodri/EPG/epg-magentatv-de.xml.gz
