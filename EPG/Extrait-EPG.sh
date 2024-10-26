@@ -20,5 +20,6 @@ if gunzip -c "$gz_file" > "$output_file"; then
     echo "Extracted: $output_file"
 else
     echo "Failed to extract: $gz_file"
+    fi
 fi
 done
