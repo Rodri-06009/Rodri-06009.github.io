@@ -1,6 +1,5 @@
 import xml.etree.ElementTree as ET
 
-# Manually specify the XML file names
 xml_files = [
     'EPG/epg-tv-ce-soir-fr.xml',
     'EPG/epg-nos-tv-pt.xml',
@@ -22,13 +21,10 @@ else:
             tree = ET.parse(filename)
             root_element = tree.getroot()
             
-            # Check if the root element has children
-            if len(root_element) == 0:
-                print(f"Warning: {filename} has no children.")
-            else:
-                for child in root_element:
-                    print(f"Appending child: {ET.tostring(child, encoding='unicode')}")
-                    root.append(child)
+            # Append all children of the root element
+            for child in root_element:
+                print(f"Appending child: {ET.tostring(child, encoding='unicode')}")
+                root.append(child)
 
         except ET.ParseError as e:
             print(f"Error parsing {filename}: {e}")
