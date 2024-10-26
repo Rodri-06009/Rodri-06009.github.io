@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import os
 
 # Dossier contenant les fichiers .xml.xz
-dossier = os.path.expanduser('Rodri-06009/EPG-Rodri/EPG/')
+dossier = os.path.expanduser('/home/runner/work/EPG-Rodri/EPG-Rodri/EPG/')
 
 # Parcours de tous les fichiers dans le dossier
 for nom_fichier in os.listdir(dossier):
