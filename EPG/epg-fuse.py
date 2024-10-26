@@ -1,16 +1,20 @@
 import xml.etree.ElementTree as ET
-import glob
+
+# Manually specify the XML file names
+xml_files = [
+    'epg-tv-ce-soir-fr.xml',
+    'epg-nos-tv-pt.xml',
+    'epg-mitv-br.xml'
+    'epg-magentatv-de.xml'
+    'epg-iltalehti-fi.xml'
+]
 
 # Create a root element for the new XML file
 root = ET.Element("Root")
 
-# Find all XML files in the current directory
-xml_files = glob.glob("*.xml")
-print(f"Found {len(xml_files)} XML files.")
-
-# Check if any XML files are found
+# Check if any XML files are provided
 if not xml_files:
-    print("No XML files found. Exiting.")
+    print("No XML files specified. Exiting.")
 else:
     for filename in xml_files:
         print(f"Processing {filename}...")
@@ -28,6 +32,8 @@ else:
 
         except ET.ParseError as e:
             print(f"Error parsing {filename}: {e}")
+        except FileNotFoundError:
+            print(f"Error: {filename} not found.")
         except Exception as e:
             print(f"An error occurred with {filename}: {e}")
 
