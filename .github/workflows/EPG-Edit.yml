@@ -1,4 +1,4 @@
-name: Extrait EPG
+name: Edit EPG
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Fuse-EPG:
+  Edit-EPG:
     runs-on: ubuntu-latest
     steps:
 
@@ -16,7 +16,22 @@ jobs:
       - name: Run EPG extrait script
         run: sh EPG/epg-extrait.sh  # Assurez-vous que le chemin est correct
 
-      - name: Run EPG fuse script
+      - name: Setup Git config
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "<>"
+
+      - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_ACCES_REPO }}
+        run: |
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git pull
+          git add .
+          git commit -m "Extrait EPG" || echo "No changes to commit"
+          git push origin main
+
+      - name: Fusion EPG
         run: python3 EPG/epg-fuse.py  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
@@ -33,3 +48,5 @@ jobs:
           git add .
           git commit -m "Update EPG" || echo "No changes to commit"
           git push origin main
+
+
