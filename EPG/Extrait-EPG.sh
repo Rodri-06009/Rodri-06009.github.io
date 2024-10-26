@@ -3,12 +3,15 @@
 # Répertoire contenant les fichiers .xml.gz
 INPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 # Répertoire de sortie
-OUTPUT_DIR="$INPUT_DIR"
+OUTPUT_DIR="$INPUT_DIR/extracted"
+
+# Créer le répertoire de sortie s'il n'existe pas
+mkdir -p "$OUTPUT_DIR"
 
 # Boucle à travers tous les fichiers .xml.gz dans le répertoire d'entrée
 for gz_file in "$INPUT_DIR"/*.xml.gz; do
     # Vérifie si le fichier existe
-    if [[ -f "$gz_file" ]]; then
+    if [ -f "$gz_file" ]; then
         # Nom du fichier de sortie
         output_file="$OUTPUT_DIR/$(basename "$gz_file" .gz)"
 
