@@ -2,11 +2,11 @@ import xml.etree.ElementTree as ET
 
 # Manually specify the XML file names
 xml_files = [
-    'epg-tv-ce-soir-fr.xml',
-    'epg-nos-tv-pt.xml',
-    'epg-mitv-br.xml'
-    'epg-magentatv-de.xml'
-    'epg-iltalehti-fi.xml'
+    'EPG/epg-tv-ce-soir-fr.xml',
+    'EPG/epg-nos-tv-pt.xml',
+    'EPG/epg-mitv-br.xml'
+    'EPG/epg-magentatv-de.xml'
+    'EPG/epg-iltalehti-fi.xml'
 ]
 
 # Create a root element for the new XML file
