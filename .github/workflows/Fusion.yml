@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Extrait EPG
-        run: python3 EPG/Extrait-EPG.py
+        run: chmod +x Extrait-EPG.sh
+
      
       - name: Fusion EPG
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
