@@ -1,5 +1,6 @@
 import xml.etree.ElementTree as ET
 
+# Manually specify the XML file names
 xml_files = [
     'EPG/epg-tv-ce-soir-fr.xml',
     'EPG/epg-nos-tv-pt.xml',
@@ -20,6 +21,10 @@ else:
         try:
             tree = ET.parse(filename)
             root_element = tree.getroot()
+            
+            # Print the root element and its children
+            print(f"Root element: {ET.tostring(root_element, encoding='unicode')}")
+            print(f"Number of children in {filename}: {len(root_element)}")
             
             # Append all children of the root element
             for child in root_element:
