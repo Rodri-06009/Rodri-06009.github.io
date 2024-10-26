@@ -3,7 +3,7 @@
 # Répertoire contenant les fichiers .xml.gz
 INPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 # Répertoire de sortie
-OUTPUT_DIR="$INPUT_DIR/extracted"
+OUTPUT_DIR="../EPG/extracted"
 
 # Créer le répertoire de sortie s'il n'existe pas
 mkdir -p "$OUTPUT_DIR"
