@@ -15,7 +15,6 @@ jobs:
 
       - name: Extrait EPG
         run: sh /EPG/Extrait-EPG.sh
-
      
       - name: Fusion EPG
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
