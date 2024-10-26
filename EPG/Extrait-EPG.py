@@ -21,5 +21,3 @@ for nom_fichier in os.listdir(dossier):
         print(f"Fichier : {nom_fichier}")
         for enfant in racine:
             print(enfant.tag, enfant.attrib)
-           
-            exit 0
