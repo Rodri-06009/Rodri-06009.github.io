@@ -7,26 +7,125 @@ output="epg-rodri.xml"
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
 echo "<Root>" >> "$output"
 
-# Boucle pour ajouter des fichiers XML
-while true; do
-    read -p "Entrez le nom du fichier XML à ajouter (ou tapez 'exit' pour terminer) :EPG/epg-iltalehti-fi.xml" filename
+# Spécifier le chemin du fichier XML
+filename="EPG/epg-iltalehti-fi.xml"
 
-    # Condition de sortie
-    if [[ "$filename" == "exit" ]]; then
-        break
-    fi
+# Vérifier si le fichier existe
+if [[ -f "$filename" ]]; then
+    echo "Processing $filename..."
+    
+    # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
+    tail -n +2 "$filename" | sed '$d' >> "$output"
+else
+    echo "Error: $filename not found. Veuillez vérifier le chemin."
+fi
 
-    # Vérifier si le fichier existe
-    if [[ -f "$filename" ]]; then
-        echo "Processing $filename..."
-        
-        # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
-        tail -n +2 "$filename" | sed '$d' >> "$output"
-        
-    else
-        echo "Error: $filename not found. Veuillez réessayer."
-    fi
-done
+# Ajouter la balise fermante
+echo "</Root>" >> "$output"
+
+echo "Combined XML has been created as $output"
+
+
+# Fichier de sortie
+output="epg-rodri.xml"
+
+# Créer ou vider le fichier de sortie
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
+echo "<Root>" >> "$output"
+
+# Spécifier le chemin du fichier XML
+filename="EPG/epg-magentatv-de.xml"
+
+# Vérifier si le fichier existe
+if [[ -f "$filename" ]]; then
+    echo "Processing $filename..."
+    
+    # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
+    tail -n +2 "$filename" | sed '$d' >> "$output"
+else
+    echo "Error: $filename not found. Veuillez vérifier le chemin."
+fi
+
+# Ajouter la balise fermante
+echo "</Root>" >> "$output"
+
+echo "Combined XML has been created as $output"
+
+
+
+# Fichier de sortie
+output="epg-rodri.xml"
+
+# Créer ou vider le fichier de sortie
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
+echo "<Root>" >> "$output"
+
+# Spécifier le chemin du fichier XML
+filename="EPG/epg-mitv-br.xml"
+
+# Vérifier si le fichier existe
+if [[ -f "$filename" ]]; then
+    echo "Processing $filename..."
+    
+    # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
+    tail -n +2 "$filename" | sed '$d' >> "$output"
+else
+    echo "Error: $filename not found. Veuillez vérifier le chemin."
+fi
+
+# Ajouter la balise fermante
+echo "</Root>" >> "$output"
+
+echo "Combined XML has been created as $output"
+
+
+
+# Fichier de sortie
+output="epg-rodri.xml"
+
+# Créer ou vider le fichier de sortie
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
+echo "<Root>" >> "$output"
+
+# Spécifier le chemin du fichier XML
+filename="EPG/epg-nos-tv-pt.xml"
+
+# Vérifier si le fichier existe
+if [[ -f "$filename" ]]; then
+    echo "Processing $filename..."
+    
+    # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
+    tail -n +2 "$filename" | sed '$d' >> "$output"
+else
+    echo "Error: $filename not found. Veuillez vérifier le chemin."
+fi
+
+# Ajouter la balise fermante
+echo "</Root>" >> "$output"
+
+echo "Combined XML has been created as $output"
+
+
+
+# Fichier de sortie
+output="epg-rodri.xml"
+
+# Créer ou vider le fichier de sortie
+echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
+echo "<Root>" >> "$output"
+
+# Spécifier le chemin du fichier XML
+filename="EPG/epg-tv-ce-soir-fr.xml"
+
+# Vérifier si le fichier existe
+if [[ -f "$filename" ]]; then
+    echo "Processing $filename..."
+    
+    # Ignorer la première ligne (déclaration XML) et supprimer la dernière ligne (la balise fermante)
+    tail -n +2 "$filename" | sed '$d' >> "$output"
+else
+    echo "Error: $filename not found. Veuillez vérifier le chemin."
+fi
 
 # Ajouter la balise fermante
 echo "</Root>" >> "$output"
