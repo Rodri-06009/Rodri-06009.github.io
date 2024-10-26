@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR="/home/Rodri-06009/EPG-Rodri/EPG"
+DIR="/EPG-Rodri/EPG"
 
 # Vérifier les fichiers .xml.gz
 echo "Fichiers trouvés :"
