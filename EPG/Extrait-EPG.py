@@ -3,7 +3,7 @@ import gzip
 import shutil
 
 # Répertoire contenant les fichiers .xml.gz
-directory = '/home/Rodri-06009/EPG-Rodri/EPG'
+directory = '/EPG/'
 
 # Liste des fichiers à décompresser
 files_to_decompress = [
