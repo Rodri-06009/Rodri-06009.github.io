@@ -22,7 +22,6 @@ for gz_file in "$INPUT_DIR"/*.xml.gz; do
         else
             echo "Failed to extract: $gz_file"
         fi
-    else
         echo "No .xml.gz files found in $INPUT_DIR."
     fi
 done
