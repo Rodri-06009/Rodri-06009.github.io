@@ -15,8 +15,7 @@ for fichier in "$dossier"/*.xml.gz; do
         echo "Traitement de $fichier..."
         
         # Décompression et affichage du contenu XML
-        zcat "$fichier" | xmllint --format - # ou remplace par ta commande de traitement XML
-        
+        zcat "$fichier" > "$dossier_extraits/$(basename "$fichier" .gz).xml" # Sauvegarde le fichier extrait        
         echo "Fichier traité : $fichier"
     else
         echo "Aucun fichier .xml.gz trouvé dans $dossier."
