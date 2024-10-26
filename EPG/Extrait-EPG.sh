@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ls -l /EPG/
+
 gzip -d /EPG/epg-tv-ce-soir-fr.xml.gz
 
 gzip -d /EPG/epg-nos-tv-pt.xml.gz
