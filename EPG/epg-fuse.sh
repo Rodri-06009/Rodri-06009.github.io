@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Fichier de sortie
-output="epg-rodri.xml"
+output="combined.xml"
 
 # Créer ou vider le fichier de sortie
 echo "<?xml version=\"1.0\" encoding=\"utf-8\"?>" > "$output"
@@ -11,10 +11,13 @@ echo "<Root>" >> "$output"
 process_file() {
     url=$1
     echo "Processing $url..."
-    if curl -s --head "$url" | grep "200 OK" > /dev/null; then
+    response=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+
+    if [ "$response" -eq 200 ]; then
+        echo "URL exists. Downloading..."
         curl -s "$url" | tail -n +2 | sed '$d' >> "$output"
     else
-        echo "Error: $url not found."
+        echo "Error: $url returned HTTP status $response."
     fi
 }
 
