@@ -23,3 +23,7 @@ else
     fi
 fi
 done
+
+# Vérifier le contenu du répertoire extrait 
+echo "Contents of extracted directory:" 
+ls -l "$OUTPUT_DIR"
