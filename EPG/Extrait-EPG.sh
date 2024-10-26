@@ -1,4 +1,19 @@
-#!/bin/sh
-mkdir extracted
+#!/bin/bash
 
-gunzip -c /home/runner/work/EPG-Rodri/EPG-Rodri/EPG/epg-iltalehti-fi.xml.gz > home/runner/work/EPG-Rodri/EPG-Rodri/EPG/epg-iltalehti-fi.xml
+# Répertoire contenant les fichiers .xml.gz
+INPUT_DIR="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
+# Répertoire de sortie
+OUTPUT_DIR="$INPUT_DIR"
+
+# Boucle à travers tous les fichiers .xml.gz dans le répertoire d'entrée
+for gz_file in "$INPUT_DIR"/*.xml.gz; do
+    # Vérifie si le fichier existe
+    if [[ -f "$gz_file" ]]; then
+        # Nom du fichier de sortie
+        output_file="$OUTPUT_DIR/$(basename "$gz_file" .gz)"
+
+        # Extraire le fichier XML
+        gunzip -c "$gz_file" > "$output_file"
+        echo "Extracted: $output_file"
+    fi
+done
