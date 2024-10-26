@@ -17,7 +17,7 @@ jobs:
         run: sh EPG/epg-extrait.sh  # Assurez-vous que le chemin est correct
 
       - name: Run EPG fuse script
-        run: sh EPG/epg-fuse.sh  # Assurez-vous que le chemin est correct
+        run: python3 EPG/epg-fuse.py  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
         run: |
