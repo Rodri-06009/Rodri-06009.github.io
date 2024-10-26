@@ -1,4 +1,4 @@
-name: Update EPG
+name: Fusion EPG
 
 on:
   schedule:
@@ -13,10 +13,10 @@ jobs:
       - name: Checkout the main repository
         uses: actions/checkout@v4
 
-      - name: Run Extrait EPG script
-        run: sh EPG/Extrait-EPG.sh  # Assurez-vous que le chemin est correct
+      - name: Extrait EPG
+        run: python3 Extrait-EPG.py
      
-      - name: Run Fusion EPG script
+      - name: Fusion EPG
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
