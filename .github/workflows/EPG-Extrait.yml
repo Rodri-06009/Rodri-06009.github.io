@@ -1,4 +1,4 @@
-name: Fuse EPG
+name: Extrait EPG
 
 on:
   schedule:
