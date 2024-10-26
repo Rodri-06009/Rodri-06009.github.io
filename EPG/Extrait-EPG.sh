@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Dossier contenant les fichiers .xml.gz
-dossier="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG/"
+dossier="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 
 # Vérifie si le dossier existe
 if [ ! -d "$dossier" ]; then
