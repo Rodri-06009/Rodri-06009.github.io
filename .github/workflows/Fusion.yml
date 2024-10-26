@@ -18,6 +18,9 @@ jobs:
         with: 
           repository: iptv-org/epg
           path: iptv-org-epg
+
+      - name: Run Extrait EPG script
+        run: sh EPG/Extrait-EPG.sh  # Assurez-vous que le chemin est correct
      
       - name: Run Fusion EPG script
         run: sh EPG/fusion.sh  # Assurez-vous que le chemin est correct
