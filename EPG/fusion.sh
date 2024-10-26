@@ -1,12 +1,8 @@
 #!/bin/bash
 
-cd /home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg && npm install
-
-cd ../EPG
-
 # Compress EPG xml files
 
-xz -k -f -9 "epg*.xml" && gzip -k -f -9 "epg*.xml"
+cat epg-iltalehti-fi.xml.gz epg-magentatv-de.xml.gz epg-mitv-br.xml.gz epg-nos-tv-pt.xml.gz epg-tv-ce-soir-fr.xml.gz > epg.xml && gzip -k epg.xml
 
 # Remove EPG xml files
 
