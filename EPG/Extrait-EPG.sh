@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ls -l /home/Rodri-06009/EPG-Rodri/EPG/
+find /home/Rodri-06009/ -type d -name "EPG"
 
 gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-tv-ce-soir-fr.xml.gz
 
