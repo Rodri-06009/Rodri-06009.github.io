@@ -46,7 +46,7 @@ jobs:
           git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
           git pull
           git add .
-          git commit -m "Update EPG" || echo "No changes to commit"
+          git commit -m "Fused EPG" || echo "No changes to commit"
           git push origin main
 
 
