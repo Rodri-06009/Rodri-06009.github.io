@@ -13,8 +13,11 @@ jobs:
       - name: Checkout the main repository
         uses: actions/checkout@v4
 
-      - name: Run EPG extrait and fuse script
-        run: sh EPG/epg-extrait-and-fuse.sh  # Assurez-vous que le chemin est correct
+      - name: Run EPG extrait script
+        run: sh EPG/epg-extrait.sh  # Assurez-vous que le chemin est correct
+
+      - name: Run EPG fuse script
+        run: sh EPG/epg-fuse.sh  # Assurez-vous que le chemin est correct
 
       - name: Setup Git config
         run: |
