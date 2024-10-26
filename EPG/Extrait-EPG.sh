@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gunzip epg-nos-tv-pt.xml.gz epg-mitv-br.xml.gz epg-magentatv-de.xml.gz epg-iltalehti-fi.xml.gz epg-tv-ce-soir-fr.xml.gz
+gunzip /home/runner/Rodri-06009/EPG-Rodri/EPG-Rodri/EPG/epg-nos-tv-pt.xml.gz /home/runner/Rodri-06009/EPG-Rodri/EPG-Rodri/EPG/epg-mitv-br.xml.gz /home/runner/Rodri-06009/EPG-Rodri/EPG-Rodri/EPG/epg-magentatv-de.xml.gz /home/runner/Rodri-06009/EPG-Rodri/EPG-Rodri/EPG/epg-iltalehti-fi.xml.gz /home/runner/Rodri-06009/EPG-Rodri/EPG-Rodri/EPG/epg-tv-ce-soir-fr.xml.gz
