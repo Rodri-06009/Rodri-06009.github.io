@@ -1,0 +1,32 @@
+name: Fuse EPG
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+jobs:
+  Fuse-EPG:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout the main repository
+        uses: actions/checkout@v4
+
+      - name: Run EPG extrait and fuse script
+        run: sh EPG/epg.sh  # Assurez-vous que le chemin est correct
+
+      - name: Setup Git config
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "<>"
+
+      - name: Commit changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_ACCES_REPO }}
+        run: |
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git pull
+          git add .
+          git commit -m "Update EPG" || echo "No changes to commit"
+          git push origin main
