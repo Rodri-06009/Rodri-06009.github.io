@@ -3,6 +3,8 @@
 # Dossier contenant les fichiers .xml.gz
 dossier="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
 
+dossier_extraits="/home/runner/work/EPG-Rodri/EPG-Rodri/EPG"
+
 # Vérifie si le dossier existe
 if [ ! -d "$dossier" ]; then
     echo "Le dossier '$dossier' n'existe pas."
