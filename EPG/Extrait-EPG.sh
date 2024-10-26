@@ -10,11 +10,11 @@ mkdir -p "$OUTPUT_DIR"
 
 # Boucle à travers tous les fichiers .xml.gz dans le répertoire d'entrée
 shopt -s nullglob  # Enable nullglob to avoid issues if no files match
+echo "Looking for files in $INPUT_DIR/*.xml.gz"
 for gz_file in "$INPUT_DIR"/*.xml.gz; do
-    # Vérifie si le fichier existe
-    if [ -f "$gz_file" ]; then
-        # Nom du fichier de sortie
-        output_file="$OUTPUT_DIR/$(basename "$gz_file" .gz)"
+    echo "Checking: $gz_file"  # Debug line to show what is being checked
+    # Remainder of the script...
+    echo "Looking for files in $INPUT_DIR/*.xml.gz"
 
         # Extraire le fichier XML
         if gunzip -c "$gz_file" > "$output_file"; then
