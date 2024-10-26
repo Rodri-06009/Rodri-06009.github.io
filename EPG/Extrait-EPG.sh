@@ -1,15 +1,15 @@
 #!/bin/bash
 
-ls -l ../EPG/
+ls -l /home/Rodri-06009/EPG-Rodri/EPG/
 
-gzip -d ../EPG/epg-tv-ce-soir-fr.xml.gz
+gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-tv-ce-soir-fr.xml.gz
 
-gzip -d ../EPG/epg-nos-tv-pt.xml.gz
+gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-nos-tv-pt.xml.gz
 
-gzip -d ../EPG/epg-mitv-br.xml.gz
+gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-mitv-br.xml.gz
 
-gzip -d ../EPG/epg-magentatv-de.xml.gz
+gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-magentatv-de.xml.gz
 
-gzip -d ../EPG/epg-iltalehti-fi.xml.gz
+gzip -d /home/Rodri-06009/EPG-Rodri/EPG/epg-iltalehti-fi.xml.gz
 
 exit 0
