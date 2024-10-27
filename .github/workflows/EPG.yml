@@ -27,8 +27,8 @@ jobs:
 
       - name: commit
         run: |
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
           git pull
           cd EPG && git add .
           git commit -m "Update EPG"
           git push origin main
-          git push https://x-access-token:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git 
