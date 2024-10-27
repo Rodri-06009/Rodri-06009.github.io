@@ -1,4 +1,4 @@
-name: Update EPG
+name: Convert EPG
 on:
   schedule:
     - cron: "10 2 * * *" # Exécute à 2h10 du matin tous les jours 
@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Convert EPG
-        run: sh EPG/epg.sh
+        run: sh EPG/EPG-Convert.sh
 
       - name: setup git config
         run: |
