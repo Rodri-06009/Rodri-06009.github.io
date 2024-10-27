@@ -14,9 +14,9 @@ npm run grab -- --site=tvcesoir.fr --output=../EPG/epg-tv-ce-soir-fr.xml --days=
 
 npm run grab -- --site=nostv.pt --output=../EPG/epg-nos-pt.xml --days=7
 
-# Allente (Finland) EPG
+# Iltalehti (Finland) EPG
 
-npm run grab -- --site=allente.fi --output=../EPG/epg-allente-fi.xml --days=7
+npm run grab -- --site=iltalehti.fi --output=../EPG/epg-iltalehti-fi.xml --days=7
 
 # Magentatv (Germany) EPG
 
