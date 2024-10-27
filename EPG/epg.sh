@@ -22,9 +22,9 @@ npm run grab -- --site=iltalehti.fi --output=../EPG/epg-iltalehti-fi.xml --days=
 
 npm run grab -- --site=web.magentatv.de --output=../EPG/epg-magentatv-de.xml --days=7
 
-# Meuguia.tv (Brasil) EPG
+# mi.tv (Brasil) EPG
 
-npm run grab -- --site=meuguia.tv --output=../EPG/epg-meuguia-tv-br.xml --days=7
+npm run grab -- --channels=/EPG/mi.tv_br.channels.xml --output=../EPG/epg-mi-tv-br.xml --days=7
 
 cd ../EPG
 
