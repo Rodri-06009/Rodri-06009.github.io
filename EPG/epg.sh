@@ -8,10 +8,10 @@ npm run grab -- --channels=../EPG/channels.xml --output=../EPG/epg-rodri.xml --d
 
 # Compress EPG xml files
 
-xz -k -f -9 epg*.xml && gzip -k -f -9 epg*.xml
+xz -k -f -9 epg-rodri.xml && gzip -k -f -9 epg-rodri.xml
 
 # Remove EPG xml files
 
-rm epg*.xml
+rm epg-rodri.xml
 
 exit 0
