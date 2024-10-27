@@ -2,7 +2,7 @@
 
 # Compress EPG xml files
 
-xz -k -f -9 epg-rodri.xml && gzip -k -f -9 epg-rodri.xml
+xz -k -f -9 EPG/epg-rodri.xml && gzip -k -f -9 EPG/epg-rodri.xml
 
 # Remove EPG xml files
 
