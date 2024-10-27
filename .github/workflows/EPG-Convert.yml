@@ -1,0 +1,29 @@
+name: Update EPG
+on:
+  schedule:
+    - cron: "10 2 * * *" # Exécute à 2h10 du matin tous les jours 
+  workflow_dispatch: # Permet l'exécution manuelle 
+
+jobs:
+  Update-EPG:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Convert EPG
+        run: sh EPG/epg.sh
+
+      - name: setup git config
+        run: |
+          git config user.name "Rodri Robot EPG"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git pull
+          cd EPG && git add .
+          git commit -m "Update EPG"
+          git push origin main
