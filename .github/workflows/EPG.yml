@@ -49,3 +49,19 @@ jobs:
           cd EPG && git add .
           git commit -m "Convert EPG"
           git push origin main
+
+      - name: Delete epg-rodri.xml
+        run: sh EPG/EPG-Delete-XML.sh
+
+      - name: setup git config
+        run: |
+          git config user.name "Rodri Robot EPG"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git pull
+          cd EPG && git add .
+          git commit -m "epg-rodri.xml delete"
+          git push origin main
