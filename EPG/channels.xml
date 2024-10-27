@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channels>
+  <channel site="nostv.pt" lang="pt" xmltv_id="RTP1.pt" site_id="139">RTP 1</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="RTP2.pt" site_id="554">RTP 2</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="SIC.pt" site_id="418">SIC</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="TVI.pt" site_id="555">TVI</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="SICNoticias.pt" site_id="419">SIC Notícias</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="CNNPortugal.pt" site_id="557">CNN Portugal</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="VPlusTVI.pt" site_id="574">V+ TVI</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="PortoCanal.pt" site_id="423">Porto Canal</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="TVIReality.pt" site_id="567">TVI Reality</channel> 
+</channels>
