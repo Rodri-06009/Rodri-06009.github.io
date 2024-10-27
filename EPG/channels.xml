@@ -24,4 +24,20 @@
   <channel site="mi.tv" lang="pt" xmltv_id="TVCulturaNacional.br" site_id="br#cultura">Cultura</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="CanalFutura.br" site_id="br#futura">Futura</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="RecordNews.br" site_id="br#record-news">Record News</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="TF1.fr" site_id="847049/tf-1">TF 1</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="France2.fr" site_id="657850/france-2">France 2</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="France3.fr" site_id="708251/france-3">France 3</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="France5.fr" site_id="82515355/france-5">France 5</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="M6.fr" site_id="779554/m6">M6</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="C8.fr" site_id="82514957/c8">C8</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="W9.fr" site_id="82515050/w9">W9</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="TMC.fr" site_id="82485548/tmc">TMC</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="TFX.fr" site_id="82514956/tfx">TFX</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="NRJ12.fr" site_id="82515048/nrj-12">NRJ 12</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="France4.fr" site_id="82515049/france-4">France 4</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="BFMTV.fr" site_id="83495148/bfm-tv">BFM TV</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="CStar.fr" site_id="83495155/cstar">CSTAR</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="Gulli.fr" site_id="76515449/gulli">Gulli</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="LEquipe.fr" site_id="76698180/lequipe">L&apos;Équipe</channel>
+  <channel site="tvcesoir.fr" lang="fr" xmltv_id="6ter.fr" site_id="54846982/6ter">6ter</channel>
 </channels>
