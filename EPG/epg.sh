@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/runner/work/EPG-Rodri/EPG-Rodri/iptv-org-epg && npm install
+cd /home/runner/work/Rodri-06009.github.io/Rodri-06009.github.io/iptv-org-epg && npm install
 
 # EPG
 
