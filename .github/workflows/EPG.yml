@@ -28,7 +28,7 @@ jobs:
 
       - name: commit
         run: |
-          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/Rodri-06009.github.io.git
           git pull
           cd EPG && git add .
           git commit -m "Update EPG"
@@ -44,7 +44,7 @@ jobs:
 
       - name: commit
         run: |
-          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/Rodri-06009.github.io.git
           git pull
           cd EPG && git add .
           git commit -m "Convert EPG"
@@ -60,7 +60,7 @@ jobs:
 
       - name: commit
         run: |
-          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/EPG-Rodri.git
+          git push https://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:${TOKEN_ACCES_REPO}@github.com/Rodri-06009/Rodri-06009.github.io.git
           git pull
           cd EPG && git add .
           git commit -m "epg-rodri.xml delete"
