@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm epg-rodri.xml
+rm EPG/epg-rodri.xml
 
 exit 0
