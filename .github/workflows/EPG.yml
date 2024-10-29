@@ -33,3 +33,6 @@ jobs:
           cd EPG && git add .
           git commit -m "Update EPG"
           git push origin main
+
+      - name: Call Cloudflare Worker
+        run: curl -X GET https://epg-rodri.iptv-rodri-lives.workers.dev/
