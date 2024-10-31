@@ -41,7 +41,7 @@ jobs:
       - name: Main
         run: |
           pwd
-          chmod +x The_K-pop.sh
+          chmod +x ./The K-pop/The_K-pop.sh
           ./The K-pop/The_K-pop.sh
 
       - name: git add
