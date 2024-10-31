@@ -7,6 +7,7 @@ import sys
 windows = 'win' in sys.platform
 
 def grab(url):
+    print(f"Fetching URL: {url}")  # Message de débogage
     try:
         response = s.get(url, timeout=15).text
         if '.m3u8' not in response:
@@ -29,7 +30,10 @@ def grab(url):
         streams = s.get(link[start:end]).text.split('#EXT')
         hd = streams[-1].strip()
         st = hd.find('http')
-        print(hd[st:].strip())
+        if st != -1:
+            print(hd[st:].strip())  # Affichage du lien de stream
+        else:
+            print("No valid stream found in response.")
 
     except requests.exceptions.RequestException as e:
         print(f"Error fetching URL: {url}. Reason: {e}")
@@ -51,6 +55,7 @@ with open('../The_K-pop/The_K-pop.txt') as f:
             line = line.split('|')
             ch_name, grp_title, tvg_logo, tvg_id = map(str.strip, line)
             grp_title = grp_title.title()
+            print(f"Channel Name: {ch_name}, Group Title: {grp_title}")  # Message de débogage
         else:
             grab(line)
 
