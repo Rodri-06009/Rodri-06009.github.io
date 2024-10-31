@@ -13,15 +13,14 @@ echo "#EXTM3U" > "$OUTPUT_FILE"
 echo "#EXT-X-VERSION:3" >> "$OUTPUT_FILE"
 echo "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000" >> "$OUTPUT_FILE"
 
-# URL à récupérer
-URL="https://www.youtube.com/@thekpop/live"
+# Demander à l'utilisateur d'entrer l'URL du live
+read -p "https://www.youtube.com/watch?v=JVocS7Yftw8" URL
 echo "Fetching URL: $URL"
 
 # Récupérer le contenu de la page
 PAGE_CONTENT=$(curl -s "$URL")
 
 # Extraire le lien .m3u8 si disponible
-# Cette méthode peut ne pas fonctionner si YouTube change sa structure
 STREAM_URL=$(echo "$PAGE_CONTENT" | grep -o 'https://[^ ]*\.m3u8' | head -n 1)
 
 if [ -n "$STREAM_URL" ]; then
