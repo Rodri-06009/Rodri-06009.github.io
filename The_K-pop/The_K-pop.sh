@@ -13,8 +13,8 @@ echo "#EXTM3U" > "$OUTPUT_FILE"
 echo "#EXT-X-VERSION:3" >> "$OUTPUT_FILE"
 echo "#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000" >> "$OUTPUT_FILE"
 
-# Demander à l'utilisateur d'entrer l'URL du live
-read -p "https://www.youtube.com/watch?v=JVocS7Yftw8" URL
+# Lien direct du live YouTube
+URL="https://m.youtube.com/watch?v=JVocS7Yftw8"
 echo "Fetching URL: $URL"
 
 # Récupérer le contenu de la page
