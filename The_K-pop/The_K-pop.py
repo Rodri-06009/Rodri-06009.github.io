@@ -1,33 +1,48 @@
-#!/usr/bin/python3
+#! /usr/bin/python3
 
+
+import requests
 import os
 import sys
-import subprocess
 
 windows = False
 if 'win' in sys.platform:
     windows = True
 
 def grab(url):
-    # Utilisation de youtube-dl pour obtenir le lien M3U8
-    command = ['youtube-dl', '-f', 'best', '--get-url', url]
-    
-    try:
-        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=15)
-        link = result.stdout.strip()
-        if result.returncode != 0 or not link:
-            print("Erreur lors de la récupération du flux.")
-            return
-    except Exception as e:
-        print(f"Erreur: {e}")
-        return
-
-    print(link)
+    response = s.get(url, timeout=15).text
+    if '.m3u8' not in response:
+        response = requests.get(url).text
+        if '.m3u8' not in response:
+            if windows:
+                print('https://raw.githubusercontent.com/Rodri200906/IPTV-Rodri/refs/heads/main/.github/Indisponible/Indisponible.m3u8')
+                return
+            #os.system(f'wget {url} -O temp.txt')
+            os.system(f'curl "{url}" > temp.txt')
+            response = ''.join(open('temp.txt').readlines())
+            if '.m3u8' not in response:
+                print('https://raw.githubusercontent.com/Rodri200906/IPTV-Rodri/refs/heads/main/.github/Indisponible/Indisponible.m3u8')
+                return
+    end = response.find('.m3u8') + 5
+    tuner = 100
+    while True:
+        if 'https://' in response[end-tuner : end]:
+            link = response[end-tuner : end]
+            start = link.find('https://')
+            end = link.find('.m3u8') + 5
+            break
+        else:
+            tuner += 5
+    streams = s.get(link[start:end]).text.split('#EXT')
+    hd = streams[-1].strip()
+    st = hd.find('http')
+    print(hd[st:].strip())
+    #print(f"{link[start : end]}")
 
 print('#EXTM3U')
 print('#EXT-X-VERSION:3')
 print('#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000')
-
+s = requests.Session()
 with open('../The_K-pop/The_K-pop.txt') as f:
     for line in f:
         line = line.strip()
@@ -42,3 +57,6 @@ with open('../The_K-pop/The_K-pop.txt') as f:
         else:
             grab(line)
 
+if 'temp.txt' in os.listdir():
+    os.system('rm temp.txt')
+    os.system('rm watch*')
